@@ -61,8 +61,11 @@
 		}
 		
 		@media (min-width: 768px) {
+		       .img .overlay {
+		       opacity: 0.4; /* Or use 0.5 for 50% opacity */
+		    }
 		      .scaled-img {
-		      transform: scale(0.8);
+		      transform: scale(0.7);
 		    }
 		}
 
@@ -170,7 +173,7 @@
 				<ul class="navbar-nav nav ml-auto">
 					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
 					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Experiences</span></a></li>
 					<li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
 					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
 				</ul>
@@ -258,7 +261,38 @@
 <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
   <div class="container">
     <div class="row d-flex align-items-start">
-      
+
+      <!-- About Me Section -->
+      <div class="col-md-6 col-lg-7 pl-lg-5 pb-5 d-flex align-items-start">
+        <div class="row justify-content-start pb-3 w-100">
+          <div class="col-md-12 heading-section ftco-animate">
+	    <h1 class="big big-2">About Me</h1>
+            <h2 class="title-s mb-4" style="margin-top: 0;">About Me</h2>
+            <p>I'm a final-year student at IIT Guwahati, driven by curiosity and a passion for product management, data analytics, finance, and consulting. I thrive at the intersection of numbers, strategy, and user-centric thinking—translating insights into bold, impactful solutions. Whether it’s decoding complex data, crafting growth strategies, or launching products, I bring energy, clarity, and innovation to every challenge.</p>
+
+            <ul class="about-info mt-4 px-md-0 px-2">
+              <li class="d-flex"><span>Education:</span> <span>Bachelor of Technology (Final Year)</span></li>
+              <li class="d-flex"><span>Language:</span> <span>English, Hindi, Bengali</span></li>
+              <li class="d-flex"><span>Data Analytics Tools:</span> <span>Microsoft Office (Suite), Python (Pandas, NumPy, Matplotlib, Scikit-learn), MySQL, Power BI</span></li>
+              <li class="d-flex"><span>PM Tools:</span> <span>Jira, Mixpanel, Amplitude, Google Analytics, Notion</span></li>
+              <li class="d-flex"><span>Design Tools:</span> <span>Figma (Design & FigJam), Canva</span></li>
+	      <li class="d-flex"><span>Web-Dev:</span> <span>HTML, CSS, JavaScript, React</span></li>
+	      <li class="d-flex"><span>ML:</span> <span>Scikit-learn, Keras, PyTorch, LLMs, Agentic AI</span></li>
+              <li class="d-flex"><span>Interest:</span> <span>Cricket, Nature Photography, Content Creation</span></li>
+            </ul>
+
+            <div class="counter-wrap ftco-animate d-flex mt-md-3">
+              <div class="text">
+                <p class="mb-4">
+                  <span class="number" data-number="10">0</span> <span>+</span>
+                  <span>&nbsp; Projects completed</span>
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
       <!-- Skills Section -->
       <div class="col-md-6 col-lg-5 pb-5 d-flex align-items-start">
             <div class="skill-mf custom-skill-container">
@@ -307,37 +341,7 @@
             </div>
       </div>
 
-      <!-- About Me Section -->
-      <div class="col-md-6 col-lg-7 pl-lg-5 pb-5 d-flex align-items-start">
-        <div class="row justify-content-start pb-3 w-100">
-          <div class="col-md-12 heading-section ftco-animate">
-	    <h1 class="big big-2">About Me</h1>
-            <h2 class="title-s mb-4" style="margin-top: 0;">About Me</h2>
-            <p>I'm a final-year student at IIT Guwahati, driven by curiosity and a passion for product management, data analytics, finance, and consulting. I thrive at the intersection of numbers, strategy, and user-centric thinking—translating insights into bold, impactful solutions. Whether it’s decoding complex data, crafting growth strategies, or launching products, I bring energy, clarity, and innovation to every challenge.</p>
-
-            <ul class="about-info mt-4 px-md-0 px-2">
-              <li class="d-flex"><span>Education:</span> <span>Bachelor of Technology (Final Year)</span></li>
-              <li class="d-flex"><span>Language:</span> <span>English, Hindi, Bengali</span></li>
-              <li class="d-flex"><span>Data Analytics Tools:</span> <span>Microsoft Office (Suite), Python (Pandas, NumPy, Matplotlib, Scikit-learn), MySQL, Power BI</span></li>
-              <li class="d-flex"><span>PM Tools:</span> <span>Jira, Mixpanel, Amplitude, Google Analytics, Notion</span></li>
-              <li class="d-flex"><span>Design Tools:</span> <span>Figma (Design & FigJam), Canva</span></li>
-	      <li class="d-flex"><span>Web-Dev:</span> <span>HTML, CSS, JavaScript, React</span></li>
-	      <li class="d-flex"><span>ML:</span> <span>Scikit-learn, Keras, PyTorch, LLMs, Agentic AI</span></li>
-              <li class="d-flex"><span>Interest:</span> <span>Cricket, Nature Photography, Content Creation</span></li>
-            </ul>
-
-            <div class="counter-wrap ftco-animate d-flex mt-md-3">
-              <div class="text">
-                <p class="mb-4">
-                  <span class="number" data-number="10">0</span> <span>+</span>
-                  <span>&nbsp; Projects completed</span>
-                </p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
+      
 
     </div>
   </div>
@@ -351,17 +355,14 @@
 		<div class="container">
 			<div class="row justify-content-center pb-5">
 				<div class="col-md-10 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Resume</h1>
-					<h2 class="mb-4">Resume</h2>
-					<p>With experience in product management, data analytics, finance, consulting, and business
-						development, always staying updated with the latest trends. A passion for numbers and technology
-						fuels an innovative approach to data science and machine learning, turning challenges into
-						opportunities.</p>
+					<h1 class="big big-2">Experience</h1>
+					<h2 class="mb-4">Experience</h2>
+					<p>Below are my Internship experiences and Positions of Responsibility which showcase my Analytical, Leadership, and Problem-Solving skills.</p>
 				</div>
 			</div>
 
 			<div class="row">
-				<h1 class="big-4">Experience</h1>
+				<h1 class="big-4">Internships</h1>
 				<div class="underline"></div>
 			</div>
 			<br>
