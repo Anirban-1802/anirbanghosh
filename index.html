@@ -57,10 +57,26 @@
 			background-color: #ffbd39;
 		}
 
-	        .wave-hand {
-		        animation: wave 2.5s infinite;
-		        transform-origin: 70% 70%;
-		        display: inline-block;
+		.greeting-text {
+		  font-size: 130%; /* Increases whole text (including emoji) by 30% */
+		}
+		
+		.wave-hand {
+		  animation: wave 2s infinite;
+		  transform-origin: 70% 70%;
+		  display: inline-block;
+		}
+		
+		/* Hand Waving Animation */
+		@keyframes wave {
+		  0% { transform: rotate(0deg); }
+		  15% { transform: rotate(14deg); }
+		  30% { transform: rotate(-8deg); }
+		  40% { transform: rotate(14deg); }
+		  50% { transform: rotate(-4deg); }
+		  60% { transform: rotate(10deg); }
+		  70% { transform: rotate(0deg); }
+		  100% { transform: rotate(0deg); }
 		}
 
 		.custom-skill-container {
@@ -135,7 +151,7 @@
 
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 		<div class="container">
-			<a class="navbar-brand" href="index.html">Anirban Ghosh</a>
+			<a class="navbar-brand" href="index.html">Portfolio</a>
 			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
 				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="oi oi-menu"></span> Menu
@@ -166,8 +182,10 @@
 						<div class="one-forth d-flex  align-items-center ftco-animate"
 							data-scrollax=" properties: { translateY: '70%' }">
 							<div class="text">
-								<span class="text-slate-300 text-2xl md:text-3xl font-normal block pt-20 pb-5">Hi! 
-									<span class="wave-hand inline-block">👋</span></span>
+								<span class="greeting-text text-slate-300 text-2xl md:text-3xl font-normal block pt-20 pb-5">
+								  Hi!<span class="wave-hand inline-block text-inherit">👋</span>
+								</span>
+
 								<h1 class="mb-4 mt-3">I'm <span>Anirban Ghosh</span></h1>
 
 								<!-- Element to contain animated typing -->
