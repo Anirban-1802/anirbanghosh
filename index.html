@@ -56,6 +56,15 @@
 			height: .7rem;
 			background-color: #ffbd39;
 		}
+		.scaled-img {
+		    transform: scale(1);
+		}
+		
+		@media (min-width: 768px) {
+		      .scaled-img {
+		      transform: scale(0.8);
+		    }
+		}
 
 		.greeting-text {
 		  font-size: 150%; /* Increases whole text (including emoji) by 30% */
@@ -175,8 +184,8 @@
 				<div class="container">
 					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
 						data-scrollax-parent="true">
-						<div class="one-third js-fullheight order-md-last img"
-							style="background-image:url(images/ghibli.png); transform: scale(0.8);">
+						<div class="one-third js-fullheight order-md-last img scaled-img"
+     							style="background-image:url(images/ghibli.png);">
 							<div class="overlay"></div>
 						</div>
 						<div class="one-forth d-flex  align-items-center ftco-animate"
