@@ -60,12 +60,41 @@
 		    transform: scale(1);
 		}
 		
-		@media (min-width: 768px) {
-		       .img .overlay {
-		       opacity: 0.4; /* Or use 0.5 for 50% opacity */
+		/* --- Mobile View Adjustments for Home Section Image --- */
+		@media (max-width: 767.98px) {
+		    /* Target the container that holds your image */
+		    #home-section .one-third.img {
+		        /* Set a specific size for the image block */
+		        height: 320px;
+		        width: 90%;
+		        max-width: 320px;
+		
+		        /* Center the block horizontally with space on top */
+		        margin: 40px auto 0 auto;
+		        
+		        /* Ensure the background image fits well inside the new size */
+		        background-size: contain;
+		        background-repeat: no-repeat;
+		        
+		        /* Remove the full-height setting that applies to desktop */
+		        height: 320px !important; /* Use !important to override inline styles if necessary */
 		    }
-		      .scaled-img {
-		      transform: scale(0.7);
+		
+		    /* This hides the overlay that causes the low opacity on mobile */
+		    #home-section .one-third.img .overlay {
+		        display: none;
+		    }
+		
+		    /* Recommended: Center the text on mobile for a cohesive look */
+		    #home-section .slider-text .text {
+		        text-align: center;
+		        width: 100%;
+		        margin-top: 40px; /* Add some space above the text */
+		    }
+		
+		    /* Ensure the main text block aligns properly */
+		    #home-section .one-forth.d-flex {
+		        display: block;
 		    }
 		}
 
@@ -193,7 +222,7 @@
 			<div class="slider-item ">
 				<div class="overlay"></div>
 				<div class="container">
-					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+					<div class="row d-md-flex no-gutters slider-text align-items-center justify-content-end"
 						data-scrollax-parent="true">
 						<div class="one-third js-fullheight order-md-last img scaled-img"
      							style="background-image:url(images/myphoto1.png);">
@@ -694,6 +723,7 @@
 </body>
 
 </html>
+
 
 
 
