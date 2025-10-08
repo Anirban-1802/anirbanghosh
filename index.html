@@ -62,39 +62,53 @@
 		
 		/* --- Mobile View Adjustments for Home Section Image --- */
 		@media (max-width: 767.98px) {
-		    /* Target the container that holds your image */
-		    #home-section .one-third.img {
-		        /* Set a specific size for the image block */
-		        height: 320px;
-		        width: 90%;
-		        max-width: 320px;
-		
-		        /* Center the block horizontally with space on top */
-		        margin: 40px auto 0 auto;
-		        
-		        /* Ensure the background image fits well inside the new size */
-		        background-size: contain;
-		        background-repeat: no-repeat;
-		        
-		        /* Remove the full-height setting that applies to desktop */
-		        height: 320px !important; /* Use !important to override inline styles if necessary */
+		    /* This forces the image and text blocks into the normal document flow */
+		    #home-section .slider-text > div {
+		        position: relative !important;
+		        top: 0;
+		        left: 0;
 		    }
 		
-		    /* This hides the overlay that causes the low opacity on mobile */
+		    /* Target the container that holds your image */
+		    #home-section .one-third.img {
+		        /* NEW SMALLER SIZE */
+		        height: 250px;
+		        max-width: 250px;
+		        
+		        /* Center the block horizontally with space on top */
+		        margin: 30px auto 0 auto;
+		        
+		        /* Ensure the background image fits well */
+		        background-size: contain;
+		        background-repeat: no-repeat;
+		        height: 250px !important;
+		    }
+		
+		    /* Hide the overlay on mobile */
 		    #home-section .one-third.img .overlay {
 		        display: none;
 		    }
-		
-		    /* Recommended: Center the text on mobile for a cohesive look */
+		    
+		    /* Adjust text alignment for mobile */
 		    #home-section .slider-text .text {
 		        text-align: center;
 		        width: 100%;
-		        margin-top: 40px; /* Add some space above the text */
+		        margin-top: 40px;
 		    }
 		
-		    /* Ensure the main text block aligns properly */
 		    #home-section .one-forth.d-flex {
 		        display: block;
+		    }
+		}
+
+		/* --- Desktop View Adjustments for Home Section Image --- */
+		@media (min-width: 768px) {
+		    #home-section .one-third.img {
+		        /* Scale the image container to 75% of its original size */
+		        transform: scale(0.75);
+		        
+		        /* Adjust the origin point to keep it aligned to the right */
+		        transform-origin: center right;
 		    }
 		}
 
@@ -723,6 +737,7 @@
 </body>
 
 </html>
+
 
 
 
